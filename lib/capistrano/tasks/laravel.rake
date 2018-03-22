@@ -234,5 +234,5 @@ namespace :laravel do
   before "deploy:updated",  "deploy:set_permissions:acl"
   before "composer:run",    "laravel:upload_dotenv_file"
   after  "composer:run",    "laravel:storage_link"
-  after  "composer:run",    "laravel:optimize"
+ # after  "composer:run",    "laravel:optimize"
 end
